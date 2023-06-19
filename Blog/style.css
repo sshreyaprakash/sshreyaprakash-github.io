@@ -1,0 +1,229 @@
+*{
+Margin: 0;
+Padding: 0;
+Box-sizing: border-box;
+Font-family: 'Poppins', sans-serif;
+text-align: center; 
+}
+.wrapper{
+Position: fixed;
+Top: 0;
+Left: 0;
+Height: 100%;
+Width: 100%;
+Background: linear-gradient(-135deg, #DAD6FF, #FFEBFE);
+Clip-path: circle(25px at calc(100% - 45px) 45px);
+Transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+Clip-path: circle(75%);
+position: fixed;
+}
+.menu-btn{
+position: fixed;
+z-index: 2;
+right: 20px;
+Top: 20px;
+Height: 50px;
+Width: 50px;
+Text-align: center;
+Line-height: 50px;
+Border-radius: 50%;
+Font-size: 20px;
+Color: black;
+Cursor: pointer;
+Background: linear-gradient(-135deg, #ccabdb);
+Transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+Background: #fff;
+Color: black;
+    position: fixed;
+}
+#active:checked ~ .menu-btn i:before{
+Content: "\f00d";
+    position: fixed;
+}
+.wrapper ul{
+position: fixed;
+Top: 50%;
+Left: 50%;
+Transform: translate(-50%, -50%);
+List-style: none;
+Text-align: center;
+color: black;
+}
+.wrapper ul li{
+Margin: 15px 0;
+}
+.wrapper ul li a{
+Color: black;
+Text-decoration: none;
+Font-size: 30px;
+Font-weight: 500;
+Padding: 5px 30px;
+Color: black;
+Position: relative;
+Line-height: 50px;
+Transition: all 0.3s ease;
+}
+.wrapper ul li a:after{
+Position: absolute;
+Content: "";
+background-color: azure;
+Width: 100%;
+Height: 50px;
+Left: 0;
+Border-radius: 50px;
+Transform: scaleY(0);
+z-index: -1;
+transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+Transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+Color:black;
+}
+Input[type="checkbox"]{
+Display: none;
+}
+
+.section1 p{
+    padding-top: 80px;
+        padding-bottom:00px;
+        padding-right: 5px;
+        padding-left: 5px;
+    text-align: left;
+    color: #666666;
+    font-family:sans-serif;
+    font-size: 20px;
+}
+.section2 p{
+    
+        padding-bottom:00px;
+        padding-right: 5px;
+        padding-left: 5px;
+    text-align: center;
+    color: black;
+    font-family:monospace;
+    font-size: 18px;
+}
+
+#gallery {
+    line-height: 0;
+    -webkit-column-count:4;
+    -webkit-column-gap:10px;
+    -moz-column-count:4;
+    -moz-column-gap:10px;
+    column-count:3;
+    column-gap: 4px;
+    padding-top: 00px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    }
+
+/*for designs*/
+#gallery1 {  
+    line-height: 0;
+    -webkit-column-count:2;
+    -webkit-column-gap:10px;
+    -moz-column-count:2;
+    -moz-column-gap:10px;
+    column-count:2;
+    column-gap: 10px;
+    padding-top: 00px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color:floralwhite;
+}
+#gallery1 img{
+            width: 100% !important;
+            height: auto  !important; 
+    margin-bottom: 10px;
+
+    }
+p{
+padding: 35px;
+font-size: 30px;
+    
+}
+        #gallery img{
+            width: 100% !important;
+            height: auto  !important;
+            margin-bottom: 5px;
+    }
+@media only screen and (max-width:700px){
+    #gallery{
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count:2;
+    }
+    #gallery1 img{
+            width: 100% !important;
+            height: auto  !important; 
+    margin-bottom: 10px;
+
+    }
+}
+@media only screen and (min-width:767px){
+
+}
+@media only screen and(min-width:768px) and (max-width:1023px){
+
+}
+@media only screen and(min-width:1024px){
+
+}
+
+
+
+
+
+
+
+<section class="section section2">
+    <div class="row">
+        <div class="column">
+         <ul>
+         <li>PROFILE</li>
+         <br>
+
+         </ul>  
+
+         <ul>
+          <li>Academic Background</li>
+          <br>
+        <li>2022<br>BE - Artificial Intelligence and Machine Learning<br>BGS College of Engineering and Technology</li><br>
+        <li>2020-2022<br>Pre-University Course<br>KLE S Nijallingappa PU College</li><br>
+        <li>2017-2020<br>High School<br>MES Kishora Kendra</li><br>
+         </ul>
+    </div>
+</section>
+        <br>
+        <section class="section section2" style="text-align: left;">
+        <div class="column">
+        <ul>
+            <li>Skills</li>
+            <br>
+            <li>Problem Solving Skills</li><br>
+
+            <li>HTML</li><br>
+            
+            <li>CSS</li><br>
+
+            <li>Canva - Creating designs</li>
+     
+        <br>
+        
+            <li>Projects</li>
+            <br>
+            Personal website using HTML and CSS : <a href="shreyap.netlify.app">shreyap</a>
+        </ul>
+        </div>
+    </div>
+ </section>
+</body>
+</html>
